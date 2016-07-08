@@ -22,8 +22,8 @@ ul {
 
 .container {
   opacity: 0.9;
-  margin: 100px auto;
-  width: 100%;
+  margin: 100px 5%;
+  width: 90%;
   border-radius: 15px;
   box-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
 }
@@ -92,8 +92,9 @@ li:hover span {
   color: darkgray;
 }
 
-@media only screen and (min-width: 700px) {
+@media only screen and (min-width: 750px) {
   .container {
     width: 700px;
+    margin: 100px auto;
   }
 }
