@@ -13,7 +13,7 @@ html {
 h1 {
   text-align: center;
   padding: 10px;
-  font-size: 2.5em;
+  font-size: 1.75em;
 }
 
 ul {
@@ -22,8 +22,8 @@ ul {
 
 .container {
   opacity: 0.9;
-  margin: 100px 5%;
-  width: 90%;
+  margin: 100px 3%;
+  width: 94%;
   border-radius: 15px;
   box-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
 }
@@ -34,7 +34,7 @@ input {
   height: 40px;
   opacity: 0.8;
   border: none;
-  font-size: 20px;
+  font-size: 1.2em;
   padding-left: 10px;
 }
 
@@ -43,24 +43,34 @@ input:focus {
   border: 5px solid #47BDFC;
   opacity: 1;
 }
-
 h3 {
-  margin-left: 5px;
-  width: calc((100% - 15px) / 3);
-  font-size: 1.3em;
-  text-align: center;
+  font-size: 1.1em;
+}
+h3:nth-child(2n) {
+  left: 41%;
+  position: absolute;
+}
+h3:last-child {
+  position: absolute;
+  right: 6%;
 }
 
 .bottom {
-  width: 100%;
+  width: 94%;
   display: flex;
   flex-wrap: wrap;
-  padding: 10px;
+  display: -webkit-flex; /* Safari */
+  -webkit-flex-wrap: wrap; /* Safari 6.1+ */
+  padding: 3%;
+}
+
+input, li {
+  cursor: pointer;
 }
 
 li {
   width: 100%;
-  font-size: 20px;
+  font-size: 1.2em;
   background: rgba(0, 0, 0, 0.1);
   height: 35px;
   line-height: 35px;
@@ -96,5 +106,45 @@ li:hover span {
   .container {
     width: 700px;
     margin: 100px auto;
+  }
+}
+
+@media only screen and (min-width: 400px) {
+  h1 {
+    font-size: 2em;
+  }
+  h3 {
+    font-size: 1.25em;
+  }
+}
+
+@media only screen and (min-width: 550px) {
+  h1 {
+    font-size: 2.5em;
+  }
+  h3 {
+    font-size: 1.5em;
+  }
+  h3:nth-child(2n) {
+    left: 225.078px;
+  }
+  h3:last-child {
+    right: 20px;
+  }
+  input {
+    height: 50px;
+  }
+  input, li {
+    font-size: 1.5em;
+  }
+  li {
+    height: 45px;
+    line-height: 45px;
+  }
+  .bottom {
+    position: relative;
+    margin: 0 auto;
+    padding: 15.5px;
+    width: 486px;
   }
 }
