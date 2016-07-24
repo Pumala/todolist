@@ -147,4 +147,10 @@ li:hover span {
     padding: 15.5px;
     width: 486px;
   }
+  ul span {
+    height: 45px;
+  }
+  li:hover span {
+    width: 45px;
+  }
 }
